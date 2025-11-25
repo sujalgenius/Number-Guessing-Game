@@ -1,0 +1,10 @@
+{
+    "python.defaultInterpreterPath": "python3",
+    "python.terminal.launchArgs": [
+        "-m",
+        "pip"
+    ],
+    "code-runner.executorMap": {
+        "python": "python3"
+    }
+}
