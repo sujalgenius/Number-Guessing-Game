@@ -33,7 +33,13 @@ while guess != number_to_be_guessed and attempts > 1:
         print("Too low!")
     elif guess > number_to_be_guessed:
         print("Too high!")
-    else:
-        print("Congratulations! You've guessed the number!")
+    
+    print("You have", attempts, "attempts remaining.")
+    guess = int(input("Make another guess: "))
 
+# End of the Game
+if guess == number_to_be_guessed:
+    print("Congratulations! You've guessed the number:", number_to_be_guessed)
+else:
+    print("Sorry, you've run out of attempts. The number was:", number_to_be_guessed)
 
