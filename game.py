@@ -1,8 +1,10 @@
 import random
 
+# Game Introduction
 print("Welcome to the Game!")
 print("The goal of the game is to guess the number I'm thinking of between 1 and 100.")
 
+# Difficulty Selection
 difficulty_level = input("Choose a difficulty level (easy, medium, hard): ")
 if difficulty_level == "easy":
     attempts = 10
@@ -14,11 +16,14 @@ else:
     print("Invalid difficulty level. Defaulting to medium.")
     attempts = 5
 
+# Game Start After Difficulty Selection
 print("")
 print("You have selected", difficulty_level, "difficulty.\nYou have", attempts, "attempts to guess the number.")
 
+# Random Number Generation
 number_to_be_guessed = int(random.randint(1,100))
 
+# User Guessing Loop
 print("")
 guess = int(input("Make your first guess: "))
 
